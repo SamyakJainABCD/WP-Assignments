@@ -6,56 +6,99 @@
     <link rel="stylesheet" href="css.css">
 </head>
 
-<body>
+<body id="home">
     <div class="navig">
         <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
         <a href="#blog">Blog</a>
-        <a href="#categories">Options</a>
         <img src="myblog logo.png" width="100" style="float: right">
         <a href="mailto:myblog@gmail.c9m" style="float: right">Contact</a>
-        <a href="" style="float: right">About</a>
+        <a href="#about us" style="float: right">About</a>
     </div>
     <div class="homepage">
-    <div style="background-color: #333;" class="center">
-        <br>
-        <p class="heading" style="font-family: monospace;">Welcome to MyBlog</p>
-        <p class="heading" style="font-family:'Courier New'">New here?</p>
-        <div class="r">
-            <a href="login.html" class="ripple">Sign Up</a>
-            <div class="rippleeffect"></div>
+        <div style="background-color: #333;" class="center">
+            <br>
+            <p class="heading" style="font-family: monospace;">Welcome to MyBlog</p>
+            <p class="heading" style="font-family:'Courier New'" id="categories">New here?</p>
+            <div class="r">
+                <a href="login.html" class="ripple">Sign Up</a>
+                <a href="login.html">
+                    <div class="rippleeffect"></div>
+                </a>
+            </div>
+            <br>
         </div>
-        <br>
+        <marquee class="marq" height="100px">
+            <a href="">Food</a>
+            <a href="">Gaming</a>
+            <a href="">Politics</a>
+            <a href="">Travel</a>
+            <a href="">Sports</a>
+            <a href="">DIY</a>
+        </marquee>
+        <br><br>
+        <div style="display: flex; width: 90%; flex-direction: row; position: absolute;">
+            <div class="container">
+                <img src="https://static.wixstatic.com/media/5bcfac_ec683f06fed14cc39a54d5575090148b~mv2.jpeg">
+                <p>How to Create the Ultimate Pink Bathroom
+                    <a href="sub.html" class="sub">Subscribe</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="https://static.wixstatic.com/media/79af6f_950f7bfeb5d3431c81360c0c6188919c~mv2.jpg">
+                <p>Three new Michelin stars for Ireland in the 2025 awards
+                    <a href="sub.html" class="sub">Subscribe</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="https://static.wixstatic.com/media/5bcfac_3d9e3a810d184eaebefbe2efb832f2a6~mv2.png">
+                <p>Home Renovation Trends for 2025: What's In and What's Out!
+                    <a href="sub.html" class="sub">Subscribe</a>
+                </p>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br id="blog"><br><br>
+        <div class="login" style="width: 98%;">
+            <form>
+                <p>Title:</h3>
+                    <input type="text" id="title" name="title"><br><br>
+                </p>
+                <p>Blog:</h3>
+                    <textarea id="Blog" name="blog" rows="12" style="font-size: 15pt;"></textarea>
+                </p>
+                <input type="reset" value="Clear">
+                <input type="submit" value="Post" class="post">
+            </form>
+        </div>
     </div>
-    <br><br><br><br>
-    <div style="display: flex; width: 90%; flex-direction: row; position: absolute;">
-        <div class="container">
-            <img src="https://static.wixstatic.com/media/5bcfac_ec683f06fed14cc39a54d5575090148b~mv2.jpeg">
-            <p>How to Create the Ultimate Pink Bathroom</p>
-        </div>
-        <div class="container">
-            <img src="https://static.wixstatic.com/media/79af6f_950f7bfeb5d3431c81360c0c6188919c~mv2.jpg">
-            <p>Three new Michelin stars for Ireland in the 2025 awards</p>
-        </div>
-        <div class="container">
-            <img src="https://static.wixstatic.com/media/5bcfac_3d9e3a810d184eaebefbe2efb832f2a6~mv2.png">
-            <p>Home Renovation Trends for 2025: What's In and What's Out! </p>
-        </div>
-    </div>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br>
-    <div class="login" style="width: 98%;">
-        <form>
-            <p>Title:</h3>
-                <input type="text" id="title" name="title"><br><br>
-            </p>
-            <p>Blog:</h3>
-                <textarea id="blog" name="blog" rows="12" style="font-size: 15pt;"></textarea>
-            </p>
-            <input type="reset" value="Clear">
-            <input type="submit" value="Post" class="post">
-        </form>
-    </div>
-</div>
+
+    <footer class="footer" style="font-size: large;" id="about us">
+        About us:
+        Welcome to our corner of the digital universe! 🌟
+        <br><br>
+        Here at MyBlog, we're passionate explorers of the vast landscapes of knowledge, creativity, and inspiration. Our
+        mission is to share insightful stories, groundbreaking ideas, and practical advice that can enrich your life and
+        spark your curiosity.
+        <br><br>
+        Whether you're a lifelong learner, an aspiring creator, or just someone looking for a fresh perspective, we've
+        got something for you. From in-depth articles and thought-provoking essays to handy tips and entertaining reads,
+        our content is crafted with love and care to bring value to your day.
+        <br><br>
+        We're more than just a blog; we're a community. We believe in the power of connection, and we're here to foster
+        a space where ideas flow freely, discussions flourish, and friendships bloom. So, don't be a stranger—join the
+        conversation, share your thoughts, and let's journey through this exciting adventure together.
+        <br><br>
+        Thank you for stopping by, and we hope you enjoy your stay!
+        <br><br>
+        Happy reading! ✨
+    </footer>
+    <footer class="footer">
+        contact:<a href="mailto:MyTour@gmail.c9m">MyTour@gmail.c9m</a>
+        <div><a href="https://www.facebook.com/" target="_blank"><img src="fb.png"></a></div>
+        <div><a href="https://www.instagram.com/" target="_blank"><img src="ig.png"></a></div>
+        <div><a href="https://www.x.com/" target="_blank"><img src="twitter.png"></a></div>
+    </footer>
 </body>
 
 </html>
