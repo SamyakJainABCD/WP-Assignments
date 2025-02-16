@@ -1,6 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.homepage {
+    padding: 2% 2%;
+    background-color: azure;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .navig {
     background-color: black;
-    /* overflow: hidden; */
     width: 99%;
     position: fixed;
     z-index: 100;
@@ -34,17 +44,15 @@
     transform-origin: bottom left;
 }
 
-.homepage {
-    padding: 2% 2%;
-    background-image: url("bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .heading {
     color: white;
     background-color: #333;
     font-size: 300%;
+}
+
+.center {
+    text-align: center;
 }
 
 .ripple {
@@ -88,8 +96,23 @@
     }
 }
 
-.center {
-    text-align: center;
+.marq a{
+    font-size: 30px;
+    border-radius: 40%;
+    background-color: #333;
+    padding: 3%;
+    text-decoration: none;
+    color:white;
+    margin: 0% 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 0.5s;
+}
+
+.marq a:hover{
+    border-radius: 50%;
+    font-size: 40px;
+    background-color: black;
+
 }
 
 .container {
@@ -97,23 +120,28 @@
     grid-template-columns: 1fr 1fr 1fr;
     background-color: white;
     border-style: solid;
+    text-align:center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container img {
     height: 200px;
-    transition: 1s;
-    z-index: 0;
+    transition: 0.5s;
 }
 .container:hover img{
     height: 300px;
-    z-index: 1;
-}
-
-.container .text {
-    font-size: 70px;
 }
 
 
+.sub{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    position:relative;
+    height: 15%;
+    border-radius: 10%;
+}
 
 .login {
     margin: 50px auto;
@@ -121,6 +149,7 @@
     border-width: 1px;
     padding: 1% 1%;
     background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
 }
 
 .login input {
@@ -144,4 +173,39 @@
 .login span {
     font-size: small;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer{
+	background-color: #333; 
+	/* height:60px; */
+    padding: 1%;
+    font-size:xx-large;
+    color: white;
+    font-family: 'Courier New', Courier, monospacex;
+    a{
+        color:aqua;
+    }
+}
+
+
+.footer img{
+    background-color:transparent; 
+	height:50px; 
+	float:right;
+	margin: 0px 5px;
+    border: none;
+}
+
+.footer div{
+    display: inline;
+}
+
+.footer div:hover img{
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce{
+    0% { transform: translate3d(0, 0, 0);}
+    50% { transform: translate3d(0, -10px, 0);}
+    100% { transform: translate3d(0, 0, 0);}
 }
