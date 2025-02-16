@@ -1,0 +1,147 @@
+.navig {
+    background-color: black;
+    /* overflow: hidden; */
+    width: 99%;
+    position: fixed;
+    z-index: 100;
+}
+
+.navig a {
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.navig a::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 20%;
+    left: 10%;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navig a:hover::after {
+    background-color: #0000ee;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.homepage {
+    padding: 2% 2%;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading {
+    color: white;
+    background-color: #333;
+    font-size: 300%;
+}
+
+.ripple {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0000ee;
+}
+
+.r {
+    position: relative;
+}
+
+.r div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+
+.r:hover div {
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0;
+    animation: doripple 1s;
+}
+
+
+@keyframes doripple {
+    from {
+        opacity: 1;
+        transform: scaleX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scaleX(1);
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    border-style: solid;
+}
+
+.container img {
+    height: 200px;
+    transition: 1s;
+    z-index: 0;
+}
+.container:hover img{
+    height: 300px;
+    z-index: 1;
+}
+
+.container .text {
+    font-size: 70px;
+}
+
+
+
+.login {
+    margin: 50px auto;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1% 1%;
+    background-color: white;
+}
+
+.login input {
+    width: 99%;
+    font-size: xx-large;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.login textarea {
+    width: 99%;
+    font-size: large;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login p {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.login span {
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
