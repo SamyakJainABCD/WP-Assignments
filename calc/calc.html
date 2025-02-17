@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<style>
+		.container {
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			padding: 10px;
+		}
+
+		.container button {
+			background-color: #f1f1f1;
+			padding: 10%;
+			font-size: 30px;
+			text-align: center;
+			margin: 10% 5%;
+			border-radius: 50%;
+			opacity: 0.9;
+			transform: translateY(0);
+			transition: 0.1s;
+			border-style: outset;
+			border: green 3px;
+		}
+
+		.container button:hover {
+			opacity: 1;
+			transform: translateY(-3px);
+		}
+	</style>
+</head>
+
+<body style="margin : 3% 30%;">
+	<div style="background-color: black; padding: 10%; border-radius: 5%;">
+		<input id="output" name="output" style="text-align: right; font-size: 400%; width: 100%;">
+		<br><br><br>
+		<div class="container">
+			<button>(</button>
+			<button>)</button>
+			<button>< </button>
+			<button style="background-color: chocolate">C</button>
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>
+			<button style="background-color: chocolate">+</button>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+			<button style="background-color: chocolate">-</button>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button style="background-color: chocolate">*</button>
+			<button>.</button>
+			<button>0</button>
+			<button style="background-color:aqua">=</button>
+			<button style="background-color:chocolate">/</button>
+		</div>
+	</div>
+</body>
+
+</html>
